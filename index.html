@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html>
+
+
+
+
+
+<head>
+    <link rel="youtube icon" type="youtube" href="new youtube logo.png">
+<title>youtube.com Clone</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Work+Sans:ital@1&display=swap" rel="stylesheet">
+
+<style>
+
+
+p{
+    font-family: Roboto,arial;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+        body{
+   
+    margin-top: 90px;
+
+  
+}
+
+    .searchbox{
+        display: flex;
+    font-size: 13px;
+    height: 30px;
+    border-width: 1px;
+    border-radius: 50px;
+    border-color: gray;
+    flex: 1;
+  padding-left: 12px;
+    cursor: text;
+align-items: center;
+box-shadow:inset 1px 1px 1px
+rgba(0,0,0,0.5);
+ margin-right: -35px;
+ border-right: 0px ;
+    }
+
+    .searchbox::placeholder{
+        font-family: Roboto,arial;
+     
+    }
+
+
+
+    .div1{
+display: inline-block; 
+vertical-align: top;
+margin-right: 10px;
+margin-bottom: 60px;
+width: 380px;
+
+}
+
+.img{
+width: 100%;
+height: 220px;
+border: none;
+border-radius: 15px;
+}
+
+
+.video-title{
+width: 280px;
+vertical-align: top;
+margin-top: 0%;
+font-size: 15px;
+font-weight: 500;
+line-height: 23px;
+margin-bottom: 6px;
+
+}
+.grid{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+
+
+}
+
+
+.pro-pic{
+    display: inline-block;
+width: 50px;
+vertical-align: top;
+}
+.channel-pic{
+    width: 40px;
+
+    border-radius: 40px;
+
+
+ 
+}
+
+
+.vid-info{
+    display: inline-block;
+width: 200px ;
+margin-top: 0%;
+}
+.row1{
+    margin-bottom: 10px;
+}
+.author,.stats{
+    font-size: 14px;
+    color: rgb(96,96,96);
+    font-weight: 200;
+}
+
+.header{
+    height: 60px;
+    display: flex;
+align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+    background-color: white;
+
+ .left-section{
+display: flex;
+align-items: center;
+
+
+
+ }
+.middle-section{
+    display: flex;
+  flex: 1;
+margin-left: 50px;
+margin-right: 35px;
+max-width: 650px;
+align-items: center;
+
+
+}
+
+ .right-section{
+    display: flex;
+    align-items: center;
+
+    justify-content: space-between ;
+    width: 150px;
+  margin-right: 20px;
+  border: none;
+  background-color: white;
+  flex-shrink: 0;
+  
+
+     
+ }
+
+
+.menu{
+    height: 20px; 
+    margin-left: 25px;
+    margin-right: 25px;
+
+
+}
+.youtube{
+    height: 60px;
+    width: 90px;
+}
+
+.mic{
+    height: 25px;
+  
+    width: 23px;
+
+
+}
+
+.search{
+    height: 25px;
+    width: 25px;
+
+    
+
+}
+.search-button{
+    border-width: 1px;
+    border-radius: 40px;
+    border-color: gray;
+    border-top-left-radius: 0%;
+    border-bottom-left-radius: 0%;
+  
+
+}
+.mic-button{
+border: none;
+    border-radius: 40px;
+   
+    margin-left: 15px;
+}
+.cam{
+    height: 30px;
+    background-color: white;
+}
+.my{
+    height: 35px;
+    border-radius: 50px;
+    background-color: white;
+}
+.notification{
+    height: 25px;
+    background-color: white;
+    border: none;
+}
+.leftbar{
+display: flex;
+background-color: aqua;
+flex-direction: column;
+left: 0%;
+top:0%;
+position: fixed;
+width: 300px;
+
+}
+
+
+
+</style>
+
+
+
+</head>
+<body>
+
+
+<div style="display: flex;
+background-color: aqua;
+flex-direction: column;
+left: 0%;
+top:0%;
+position: fixed;
+width: 300px;">
+
+    <div ><img   src="img/home icon.png" alt="" Home></div>
+        <button></button>
+        <button></button>
+    
+    </div>
+
+<div class="header"> 
+    
+   <div class="left-section"><img class="menu" src="img/menu icon.png">
+<img class="youtube" src="img/new youtube logo.png"></div>
+
+
+   <div class="middle-section"> 
+     <input class="searchbox" type="text " placeholder="Search">
+
+<button class="search-button"><img class="search" style="border-radius: 50px;"  src="img/search icon.png" alt=""></button>
+<button class="mic-button"><img class="mic" src="img/mic icon.png" alt=""></button>
+     
+     
+ </div> 
+   <div class="right-section"> 
+ <button style=" border: none; background-color: white;"><img class="cam"  src="img/cam icon.png" alt=""></button>
+    <button style=" border: none; background-color: white;"><img  class="notification" src="img/notification icon.png" alt=""></button>
+    <button style=" border: none; background-color: white;"><img  class="my" src="img/my icon.jpeg" alt=""></button>
+</div>
+   
+
+
+
+</div>
+
+
+<div class="sidebar" style="display: flex;
+left: 30px;
+flex-direction: column;
+top: 60px; position: fixed;
+top: 80px;
+font-size: small;
+align-items: center;
+
+">
+    
+    
+    <div style="margin-bottom: 40px;"> <img style="height: 30px;" src="img/home icon black.png"><br>Home</div>
+
+    <div style="margin-bottom: 40px;"><img style="height: 30px;" src="img/shots icon.png"><br>Shorts</div>
+
+    <div style="margin-bottom: 40px;"><img style="height: 30px; margin-left: 14px;" src="img/subscribtion icon.png"><br>Subscription</div>
+
+    <div style="margin-bottom: 40px;"><img style="height: 30px;" src="img/library.png"><br>library</div>
+
+</div>
+
+
+
+<div style="margin-left: 130px;">
+    <div class="div1">
+    
+    
+    <div class="row1"><img class="img" src="img/img1.jpeg"></div>
+    
+    <div class="grid">
+        <div class="pro-pic"><img class="channel-pic" src="img/channel1.jpeg" alt=""></div>
+    
+    
+        <div class="vid-info">
+            <p class="video-title">Mix &#183; Locked Away &#183; Justin Bieber  Sam 
+            Beyoncé &#183; Ellie Goulding  N&#183; Minaj </p>
+                
+                    
+                <p class="author"> Sam Smith, Ellie Goulding, and more</p>
+                
+                <p class="stats">2&#183;4M views &#183; 2 Weeks ago</p>
+            </div>
+        </div>
+    
+    </div>
+    
+    
+    
+    
+    <div class="div1">
+    
+    
+        <div class="row1"><img class="img" src="img/img2.webp"></div>
+        
+        <div class="grid">
+            <div class="pro-pic"><img class="channel-pic" src="img/channel2.jpeg" alt=""></div>
+        
+        
+            <div class="vid-info">
+                <p class="video-title">Mix &#183; Locked Away &#183; Justin Bieber  Sam 
+                Beyoncé &#183; Ellie Goulding  N&#183; Minaj </p>
+                    
+                        
+                    <p class="author">Space music</p>
+                    
+                    <p class="stats">2&#183;8M views &#183; 5 years ago</p>
+                </div>
+            </div>
+        
+        </div>
+        
+        
+        
+    
+        
+    <div class="div1">
+    
+    
+        <div class="row1"><img class="img" src="img/img3.webp"></div>
+        
+        <div class="grid">
+            <div class="pro-pic"><img class="channel-pic" src="img/channel3.jpeg" alt=""></div>
+        
+        
+            <div class="vid-info">
+                <p class="video-title">BASS BOOSTED SONGS 2022 🔥 CAR MUSIC MIX 2022 🔥 BEST REMIXES OF EDM BASS BOOSTED </p>
+                    
+                        
+                    <p class="author"> Dreamy vibes</p>
+                    
+                    <p class="stats">2&#183;3M views &#183; 2 years ago</p>
+                </div>
+            </div>
+        
+        </div>
+        
+        
+        
+    <br>
+        
+        
+    <div class="div1">
+    
+    
+        <div class="row1"><img class="img" src="img/img4.webp"></div>
+        
+        <div class="grid">
+            <div class="pro-pic"><img class="channel-pic" src="img/channel4.jpeg" alt=""></div>
+        
+        
+            <div class="vid-info">
+                <p class="video-title">Episode 01 Introduction | Python Django Tutorial | Brototype Malayalam</p>
+                    
+                        
+                    <p class="author">Nikhil Kilivayil, brototype</p>
+                    
+                    <p class="stats">15K views
+                        20 hours ago</p>
+                </div>
+            </div>
+        
+        </div> 
+    
+        
+    
+        
+        <div class="div1">
+    
+    
+            <div class="row1"><img class="img" src="img/img5.webp"></div>
+            
+            <div class="grid">
+                <div class="pro-pic"><img class="channel-pic" src="img/channel4.jpeg" alt=""></div>
+            
+            
+                <div class="vid-info">
+                    <p class="video-title">I came here because of that MOVIE! 💯🔥 | Interview with Boney Johns | Brototype Malayalam</p>
+                        
+                            
+                        <p class="author">Nikhil Kilivayil, brototype</p>
+                        
+                        <p class="stats">15K views
+                            2 days ago</p>
+                    </div>
+                </div>
+            
+            </div> 
+        
+         
+            
+       
+            <div class="div1">
+    
+    
+                <div class="row1"><img class="img" src="img/img6.webp"></div>
+                
+                <div class="grid">
+                    <div class="pro-pic"><img class="channel-pic" src="img/channel4.jpeg" alt=""></div>
+                
+                
+                    <div class="vid-info">
+                        <p class="video-title">Revealed! What was the real secret!!😱🔥 | Brototype Malayalam</p>
+                            
+                                
+                            <p class="author">Nikhil Kilivayil, brototype</p>
+                            
+                            <p class="stats">100K views
+                                3 years ago</p>
+                        </div>
+                    </div>
+                
+                </div>     
+            
+            
+    <div class="div1">
+    
+    
+        <div class="row1"><img class="img" src="img/img8.webp "></div>
+        
+        <div class="grid">
+            <div class="pro-pic"><img class="channel-pic" src="img/channel8.jpeg" alt=""></div>
+        
+        
+            <div class="vid-info">
+                <p class="video-title">What is a JavaScript Framework? (in detail)</p>
+                    
+                        
+                    <p class="author">Super Simple Dev</p>
+                    
+                    <p class="stats">2&#183;8M views &#183; 5 years ago</p>
+                </div>
+            </div>
+        
+        </div>
+        
+
+        <div class="div1">
+    
+    
+            <div class="row1"><img class="img" src="img/channel 4 image.webp"></div>
+            
+            <div class="grid">
+                <div class="pro-pic"><img class="channel-pic" src="img/channel5_profile.jpeg" alt=""></div>
+            
+            
+                <div class="vid-info">
+                    <p class="video-title">Top 10 CSS Features You Should Know & Use in 2023
+                    </p>
+                        
+                            
+                        <p class="author">
+                            SuperSimpleDev</p>
+                        
+                        <p class="stats">2&#183;1M views
+                            3 months ago</p>
+                    </div>
+                </div>
+            
+            </div>
+            
+    
+            <div class="div1">
+    
+    
+                <div class="row1"><img class="img" src="img/img7.webp"></div>
+                
+                <div class="grid">
+                    <div class="pro-pic"><img class="channel-pic" src="img/channel7.jpeg" alt=""></div>
+                
+                
+                    <div class="vid-info">
+                        <p class="video-title">Everyday English Conversation Practice | 30 Minutes English Listening</p>
+                            
+                                
+                            <p class="author">English Easy Practice</p>
+                            
+                            <p class="stats">2&#183;3M views &#183; 2 months ago</p>
+                        </div>
+                    </div>
+                
+                </div>
+                
+        
+            
+        
+
+        
+        </div>
+        
+
+
+
+
+
+</body>
+
+
+
+
+</html>
